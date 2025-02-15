@@ -3,46 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
 <body>
     <header>
-        <nav>
-
+        <nav class="nav_header">
             <div>
 
-                <div>
+                <div class="nav_menu">
 
-                    <img src="storage/img/Menu.svg">
-                    <img src="storage/img/notis.svg">
-
-                </div>
-
-                <div>
-
-                    <h1>Find 
-                        Trending Events</h1>
+                    <a><img src="storage/img/menu.svg"></a>
+                    <a class="noti"><img src="storage/img/notis.svg"></a>
 
                 </div>
+
+                <div class="nav_title">
+
+                    <h1>Find <br /> 
+                        <span>Trending Events</span></h1>
+
+                </div>
                 <div>
 
-                    <div>
+                    <div class="nav_search_bar">
 
-                        <form action="/buscar" method="GET">
-                            <button type="submit"><img src="storage/img/Search 3.svg"></button>
+                        <form class="search" action="/buscar" method="GET">
+                            <a><img src="storage/img/Search 3.svg"></a>
                             <input type="search" id="busqueda" name="q" placeholder="Search event..">
+                            <a><img src="storage/img/Filter 6.svg"></button>
                         </form>
-                        <a><button><img src="storage/img/Filter 6.svg"></button></a>
 
-                    </div>
-
-                    <div>
-                        <ul>
-                            <li><a><button>Music Concert</button></a></li>
-                            <li><a><button>Exhibition</button></a></li>
-                            <li><a><button>Stand Up Show</button></a></li>
-                            <li><a><button>Theater</button></a></li>
-                        </ul>
+                        <div class="nav_genres">
+                            <ul>
+                                <li><a><button>Music Concert</button></a></li>
+                                <li><a><button>Exhibition</button></a></li>
+                                <li><a><button>Stand Up Show</button></a></li>
+                                <li><a><button>Theater</button></a></li>
+                            </ul>
+    
+                        </div>
 
                     </div>
 

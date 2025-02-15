@@ -1,0 +1,77 @@
+@import url(variables.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+   width: 349px;
+}
+/******* Header *******/
+@media screen and (max-width: 720px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        width: 720px;
+        gap: 20px;
+        /* flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        position: relative;
+        width: 346px; */
+    }
+    .nav_header{
+
+    }
+    
+    .nav_menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+        height: 34px;
+        margin: 41px 21px 20px 22px;
+    }
+
+    .nav_title{
+        width: 265px;
+        height: 72px;
+        position: relative;
+        font-family: "Inter-Semibold";
+        font-size: 20px;
+        line-height: 36px;
+        margin: 0 21px 20px 22px;
+        span{
+            color: rgba(118, 28, 188, 1);
+        }
+    }
+
+    .nav_search_bar{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 21px 0 22px;
+        input{
+            border-style: none;
+        }
+    }
+
+    .search{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 20px;
+        background-color: white;
+    }
+    .nav_genres{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+}
