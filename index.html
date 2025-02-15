@@ -7,14 +7,17 @@
     <title>Home</title>
 </head>
 <body>
+    <div class="bg">
+        <img src="storage/img/bg.svg">
+    </div>
+
     <header>
         <nav class="nav_header">
-            <div>
 
                 <div class="nav_menu">
 
                     <a><img src="storage/img/menu.svg"></a>
-                    <a class="noti"><img src="storage/img/notis.svg"></a>
+                    <a><img src="storage/img/notis.svg"></a>
 
                 </div>
 
@@ -29,26 +32,23 @@
                     <div class="nav_search_bar">
 
                         <form class="search" action="/buscar" method="GET">
-                            <a><img src="storage/img/Search 3.svg"></a>
-                            <input type="search" id="busqueda" name="q" placeholder="Search event..">
-                            <a><img src="storage/img/Filter 6.svg"></button>
+                            <div>
+                                <a><img src="storage/img/Search 3.svg"></a>
+                                <input type="search" id="busqueda" name="q" placeholder="Search event..">
+                            </div>
+                            <a><img src="storage/img/Filter 6.svg"></a>
                         </form>
 
                         <div class="nav_genres">
-                            <ul>
-                                <li><a><button>Music Concert</button></a></li>
-                                <li><a><button>Exhibition</button></a></li>
-                                <li><a><button>Stand Up Show</button></a></li>
-                                <li><a><button>Theater</button></a></li>
-                            </ul>
-    
+                            <a>Music concert</a>
+                            <a>Exhibition</a>
+                            <a>Stand Up Show</a>
+                            <a>Theater</a>
                         </div>
 
                     </div>
 
                 </div>
-
-            </div>
 
         </nav>
     </header>

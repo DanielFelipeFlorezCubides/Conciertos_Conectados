@@ -7,46 +7,45 @@
 }
 
 
-body{
-   width: 349px;
+.bg{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
 }
 /******* Header *******/
-@media screen and (max-width: 720px){
-    header{
+@media screen and (max-width: 394px){
+    body{
+        position: relative;
+        margin: 0 auto;
+        width: 390px;
+    }
+
+    .nav_header{
+        width: 346px;
+        height: 231px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        position: relative;
-        width: 720px;
         gap: 20px;
-        /* flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-        position: relative;
-        width: 346px; */
-    }
-    .nav_header{
-
+        position: absolute;
+        top: 41px;
+        left: 21px;
     }
     
     .nav_menu{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 400px;
+        width: 346px;
         height: 34px;
-        margin: 41px 21px 20px 22px;
     }
 
     .nav_title{
         width: 265px;
         height: 72px;
-        position: relative;
         font-family: "Inter-Semibold";
         font-size: 20px;
         line-height: 36px;
-        margin: 0 21px 20px 22px;
         span{
             color: rgba(118, 28, 188, 1);
         }
@@ -55,8 +54,7 @@ body{
     .nav_search_bar{
         display: flex;
         flex-direction: column;
-        gap: 15px;
-        margin: 0 21px 0 22px;
+        gap: 16px;
         input{
             border-style: none;
         }
@@ -70,8 +68,34 @@ body{
         background-color: white;
     }
     .nav_genres{
+        width: 346px;
+        height: 28px;
+        flex-shrink: 0;
+        overflow-x: scroll;
         display: flex;
         flex-direction: row;
-        position: relative;
+        gap: 12px;
+        a{
+            white-space: nowrap;
+            padding: 6.5px 14.5px 6.5px 14.5px;
+        }
+        a:nth-child(1){
+            background-color: cyan;
+        }
+        a:nth-child(2){
+            background-color: yellow;
+        }
+        a:nth-child(3){
+            background-color: orange;
+        }
+        a:nth-child(4){
+            background-color: greenyellow;
+        }
+    }
+
+    main{
+        position: absolute;
+        top: 310px;
+        left: 22px;
     }
 }
