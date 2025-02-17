@@ -66,7 +66,17 @@
         justify-content: space-between;
         margin-right: 20px;
         background-color: white;
+        border-radius: 10px;
+        a{
+            padding: 12px;
+        }
+        div{
+            border-style: none;
+            align-items: center;
+            padding: 12px;
+        }
     }
+
     .nav_genres{
         width: 346px;
         height: 28px;
@@ -78,6 +88,7 @@
         a{
             white-space: nowrap;
             padding: 6.5px 14.5px 6.5px 14.5px;
+            border-radius: 10px;
         }
         a:nth-child(1){
             background-color: cyan;
