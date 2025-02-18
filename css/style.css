@@ -94,16 +94,24 @@
             border-radius: 10px;
         }
         a:nth-child(1){
-            background-color: cyan;
+            background-color:rgba(237, 233, 255, 1);
+            font-family: "Inter-Semibold";
+            font-size: 12px;
         }
         a:nth-child(2){
-            background-color: yellow;
+            background-color: rgba(255, 245, 215, 1);
+            font-family: "Inter-Semibold";
+            font-size: 12px;
         }
         a:nth-child(3){
-            background-color: orange;
+            background-color: rgba(255, 236, 236, 1);
+            font-family: "Inter-Semibold";
+            font-size: 12px;
         }
         a:nth-child(4){
-            background-color: greenyellow;
+            background-color: rgba(228, 255, 234, 1);
+            font-family: "Inter-Semibold";
+            font-size: 12px;
         }
     }
 
@@ -137,9 +145,72 @@
 
     .box{
         background-image: url(../storage/img/Coldplay_bg.svg);
-        width: 339px;
+        width: 346px;
         height: 186px;
         border-radius: 10px;
+    }
+
+    .box_text_container{
+        position: relative;
+        width: 332px;
+        height: 90px;
+        padding: 88px 7px 8px 7px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .box_text{
+        padding: 16.5px 13px 16.5px 13px;
+        width: 332px;
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        justify-content: center;
+        align-items: center;
+        h5{
+            font-family: "Inter-Regular";
+            font-size: 12px;
+            white-space: nowrap;
+            color: white;
+            padding-bottom: 5px;
+        }
+    }
+
+    .text_box{
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 0;
+        white-space: nowrap;
+        gap: 6px;
+        padding: 2px;
+        p{
+            font-family: "Inter-Semibold";
+            font-size: 11px;
+            color: white;
+        }
+    }
+
+    .box_text_2{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding: 27.5px 13px 27.5px 13px;
+        
+        h6{
+            font-family: "Inter-Semibold";
+            font-size: 10px;
+            color: white;
+        }
+        h4{
+            font-family: "Inter-Regular";
+            font-size: 16px;
+            color: white;
+        }
     }
 
     .cards{
