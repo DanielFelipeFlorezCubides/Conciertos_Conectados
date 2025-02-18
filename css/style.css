@@ -16,9 +16,10 @@
 /******* Header *******/
 @media screen and (max-width: 394px){
     body{
-        position: relative;
+        position: absolute;
         margin: 0 auto;
         width: 390px;
+        height: 840px;
     }
 
     .nav_header{
@@ -82,6 +83,8 @@
         height: 28px;
         flex-shrink: 0;
         overflow-x: scroll;
+        scrollbar-width: none;
+        display: none;
         display: flex;
         flex-direction: row;
         gap: 12px;
@@ -157,7 +160,8 @@
 
     .card1{
         width: 166px;
-        height: 203px;
+        height: 220px;
+        box-shadow: 2px 2px 6px 2px gray;
         img{
             padding: 8px 8px 0 8px;
         }
@@ -174,16 +178,19 @@
         flex-direction: column;
         position: relative;
         left: 8px;
-        gap: 6px;
     }
 
     .info1{
+        position: relative;
         display: flex;
         flex-direction: row;
+        gap: 5px;
         p{
             padding-top: 5px;
             font-family: "Inter-Semibold";
             font-size: 10px;
+            text-align: center;
+            padding-top: 8px;
             /* rgba(236, 68, 30, 1) */
         }
     }
@@ -192,9 +199,11 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        position: relative;
+        left: 7px;
         gap: 5px;
         p{
-            padding-top: 5px;
+            padding-top: 7px;
             font-family: "Inter-Semibold";
             font-size: 10px;
             color: rgba(236, 68, 30, 1);
@@ -203,7 +212,8 @@
 
     .card2{
         width: 166px;
-        height: 203px;
+        height: 220px;
+        box-shadow: 2px 2px 6px 2px gray;
         img{
             padding: 8px 8px 0 8px;
         }
