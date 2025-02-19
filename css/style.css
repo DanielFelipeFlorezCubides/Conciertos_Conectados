@@ -6,8 +6,13 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 844px;
+}
+
 .bg{
     position: absolute;
+    height: 844px;
     top: 0;
     z-index: -1;
     width: 100%;
@@ -103,7 +108,7 @@
         position: relative;
         width: 343.5px;
         height: 35px;
-        top: 60px;
+        top: 30px;
     }
 
     .code{
