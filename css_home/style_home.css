@@ -1,0 +1,299 @@
+@import url(variables_home.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.bg{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+/******* Header *******/
+@media screen and (max-width: 394px){
+    body{
+        position: absolute;
+        margin: 0 auto;
+        width: 390px;
+        height: 840px;
+    }
+
+    .nav_header{
+        width: 346px;
+        height: 231px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 41px;
+        left: 21px;
+    }
+    
+    .nav_menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 346px;
+        height: 34px;
+    }
+
+    .nav_title{
+        width: 265px;
+        height: 72px;
+        font-family: "Inter-Semibold";
+        font-size: 20px;
+        line-height: 36px;
+        span{
+            color: rgba(118, 28, 188, 1);
+        }
+    }
+
+    .nav_search_bar{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        input{
+            border-style: none;
+        }
+    }
+
+    .search{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 20px;
+        background-color: white;
+        border-radius: 10px;
+        a{
+            padding: 12px;
+        }
+        div{
+            border-style: none;
+            align-items: center;
+            padding: 12px;
+        }
+    }
+
+    .nav_genres{
+        width: 346px;
+        height: 28px;
+        flex-shrink: 0;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        display: none;
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        a{
+            white-space: nowrap;
+            padding: 6.5px 14.5px 6.5px 14.5px;
+            border-radius: 10px;
+        }
+        a:nth-child(1){
+            background-color:rgba(237, 233, 255, 1);
+            font-family: "Inter-Semibold";
+            font-size: 12px;
+        }
+        a:nth-child(2){
+            background-color: rgba(255, 245, 215, 1);
+            font-family: "Inter-Semibold";
+            font-size: 12px;
+        }
+        a:nth-child(3){
+            background-color: rgba(255, 236, 236, 1);
+            font-family: "Inter-Semibold";
+            font-size: 12px;
+        }
+        a:nth-child(4){
+            background-color: rgba(228, 255, 234, 1);
+            font-family: "Inter-Semibold";
+            font-size: 12px;
+        }
+    }
+
+    main{
+        position: absolute;
+        top: 310px;
+        left: 22px;
+    }
+
+    .slider{
+        width: 346px;
+        height: 219px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        gap: 16px;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        h3{
+            font-family: "Inter-Regular";
+            font-size: 14px;
+        }
+        h4{
+            font-family: "Inter-Semibold";
+            font-size: 12px;
+        }
+    }
+
+    .box{
+        background-image: url(../storage_home/img/Coldplay_bg.svg);
+        width: 346px;
+        height: 186px;
+        border-radius: 10px;
+    }
+
+    .box_text_container{
+        position: relative;
+        width: 332px;
+        height: 90px;
+        padding: 88px 7px 8px 7px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .box_text{
+        padding: 16.5px 13px 16.5px 13px;
+        width: 332px;
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        justify-content: center;
+        align-items: center;
+        h5{
+            font-family: "Inter-Regular";
+            font-size: 12px;
+            white-space: nowrap;
+            color: white;
+            padding-bottom: 5px;
+        }
+    }
+
+    .text_box{
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 0;
+        white-space: nowrap;
+        gap: 6px;
+        padding: 2px;
+        p{
+            font-family: "Inter-Semibold";
+            font-size: 11px;
+            color: white;
+        }
+    }
+
+    .box_text_2{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding: 27.5px 13px 27.5px 13px;
+        
+        h6{
+            font-family: "Inter-Semibold";
+            font-size: 10px;
+            color: white;
+        }
+        h4{
+            font-family: "Inter-Regular";
+            font-size: 16px;
+            color: white;
+        }
+    }
+
+    .cards{
+        width: 349px;
+        height: 236px;
+        position: absolute;
+        top: 259px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .cards_container{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .card1{
+        width: 166px;
+        height: 220px;
+        box-shadow: 2px 2px 6px 2px gray;
+        img{
+            padding: 8px 8px 0 8px;
+        }
+    }
+
+    .card1 h5{
+        font-family: "Inter-Regular";
+        font-size: 10px;
+        padding-top: 10px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 8px;
+    }
+
+    .info1{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        p{
+            padding-top: 5px;
+            font-family: "Inter-Semibold";
+            font-size: 10px;
+            text-align: center;
+            padding-top: 8px;
+            /* rgba(236, 68, 30, 1) */
+        }
+    }
+
+    .info1_2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        left: 7px;
+        gap: 5px;
+        p{
+            padding-top: 7px;
+            font-family: "Inter-Semibold";
+            font-size: 10px;
+            color: rgba(236, 68, 30, 1);
+        }
+    }
+
+    .card2{
+        width: 166px;
+        height: 220px;
+        box-shadow: 2px 2px 6px 2px gray;
+        img{
+            padding: 8px 8px 0 8px;
+        }
+    }
+
+    .card2 h5{
+        font-family: "Inter-Regular";
+        font-size: 10px;
+        padding-top: 10px;
+    }
+
+}

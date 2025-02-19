@@ -1,0 +1,12 @@
+:root{
+    --color-1: white; 
+}
+
+@font-face {
+    font-family: "Inter-Semibold";
+    src: url(../storage/fonts/Inter_18pt-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(../storage/fonts/Inter_18pt-Regular.ttf);
+}
