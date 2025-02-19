@@ -1,4 +1,4 @@
-@import url(variables.css);
+@import url(variables_home.css);
 
 *{
     padding: 0;
@@ -144,7 +144,7 @@
     }
 
     .box{
-        background-image: url(../storage/img/Coldplay_bg.svg);
+        background-image: url(../storage_home/img/Coldplay_bg.svg);
         width: 346px;
         height: 186px;
         border-radius: 10px;
