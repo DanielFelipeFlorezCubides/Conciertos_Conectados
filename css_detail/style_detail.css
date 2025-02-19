@@ -1,4 +1,4 @@
-@import url(variables.css);
+@import url(variables_detail.css);
 
 *{
     padding: 0;
@@ -17,7 +17,7 @@
     }
 
     .header_area{
-        background-image: url(../storage/img/bgDetail.svg);
+        background-image: url(../storage_detail/img/bgDetail.svg);
         width: 390px;
         height: 316px;
         z-index: -1;
