@@ -1,0 +1,125 @@
+@import url(variables_tickets.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 844px;
+}
+
+.bg{
+    position: absolute;
+    height: 844px;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+@media screen and (max-width: 394px){
+
+    .nav{
+        width: 390px;
+        height: 34px;
+        position: relative;
+        top: 35px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 34px 22px 0 22px;
+    }
+
+    .back{
+        width: 34px;
+        height: 34px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        backdrop-filter: blur(1px);
+        a{
+            position: absolute;
+            padding: 7px;
+        }
+    }
+
+    .ticket_area{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        left: 22px;
+        top: 115px;
+        background-color: white;
+        border-radius: 20px;
+        width: 343.5px;
+        height: 596px;
+    }
+
+    .Coldplay_image{
+        width: 308px;
+        height: 159px;
+        position: relative;
+        padding: 17px 17px 16px 18px;
+    }
+
+    .info_area{
+        width: 292px;
+        height: 241px;
+        position: relative;
+        top: 30px;
+        left: 22px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info_title{
+        width: 292px;
+        height: 65px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        h2{
+            font-family: "Inter-Regular";
+            font-size: 18px;
+        }
+        p{
+            font-family: "Inter-Semibold";
+            font-size: 12px;
+            white-space: nowrap;
+        }
+    }
+
+    .info_details_area{
+        width: 286px;
+        height: 156px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .info_details{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .line{
+        position: relative;
+        width: 343.5px;
+        height: 35px;
+        top: 30px;
+    }
+
+    .code{
+        position: relative;
+        top: 55px;
+        left: 35px;
+    }
+
+    .final_info{
+        position: relative;
+        top: 60px;
+        left: 60px;
+    }
+}
